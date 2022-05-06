@@ -49,7 +49,7 @@ body{
 
 /* Styling the subtitle */
 .subtitle{
-    color: var(--very-light-pink);
+    color: var(--black);
     font-size: var(--md);
     font-weight: 300;
     margin-top: 0;
