@@ -1,0 +1,14 @@
+/* Declaring global color variables */
+:root{
+    --very-light-pink: #C7C7C7;
+    --white: #FFFFFF;
+    --text-input-field: #F7F7F7;
+    --black: #000000;
+    --hospital-green: #ACD9B2;
+    --dark: #232830;
+}
+
+/* Adding Quicksand font to body */
+body{
+    font-family: 'Quicksand', sans-serif;
+}
