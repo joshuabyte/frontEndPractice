@@ -97,7 +97,7 @@ body{
     cursor: pointer;
     font-size: var(--md);
     font-weight: bold;
-    height: 50px;
+    height: 58px;
 }
 
 .login_button{
