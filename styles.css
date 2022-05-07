@@ -32,7 +32,7 @@ body{
 .form_container_email{
     display: grid;
     grid-template-rows: auto 1fr auto;
-    width: 300px;
+    width: 325px;
     /* We used this line to center the "Didn't receive the email" text */
     justify-items: center;
 }
@@ -177,7 +177,7 @@ body{
 .form_container_login{
     display: grid;
     grid-template-rows: auto 1fr auto;
-    width: 300px;
+    width: 325px;
 }
 
 .logo_home{
