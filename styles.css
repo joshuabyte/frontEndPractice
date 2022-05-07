@@ -17,6 +17,8 @@ body{
     font-family: 'Quicksand', sans-serif;
 }
 
+/* Styles for "Create new Password" screen */
+
 /* Styling classes orderly */
 .login{
     width: 100%;
@@ -31,6 +33,8 @@ body{
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 300px;
+    /* We used this line to center the "Didn't receive the email" text */
+    justify-items: center;
 }
 
 .logo{
@@ -109,4 +113,41 @@ body{
     .logo{
         display: block;
     }
+}
+
+/* Styles for "resend email" page */
+
+.email_icon{
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: var(--text-input-field);
+    display: flex;
+    /* Line to center the icon with the circle */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.email_icon img{
+    width: 85px;
+}
+
+.resend{
+    font-size: var(--sm);
+    }
+
+.resend span{
+    color: var(--black);
+    font-weight: 400;
+}
+
+.resend a{
+    color: var(--hospital-green);
+    text-decoration: none;
+    font-weight: 400;
 }
