@@ -29,7 +29,7 @@ body{
 }
 
 /* Styling the form elements */
-.form_container{
+.form_container_email{
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 300px;
@@ -74,6 +74,7 @@ body{
 }
 
 .input{
+    font-family: 'Quicksand', sans-serif;
     background-color: var(--text-input-field);
     border: none;
     border-radius: 8px;
@@ -87,6 +88,10 @@ body{
     margin-bottom: 12px;
 }
 
+.input_email{
+    margin-bottom: 22px;
+}
+
 .primary_button{
     font-family: 'Quicksand', sans-serif;
     background-color: var(--hospital-green);
@@ -97,6 +102,23 @@ body{
     -o-border-radius: 8px;
     border: none;
     color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 58px;
+}
+
+.secondary_button{
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--white);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
     width: 100%;
     cursor: pointer;
     font-size: var(--md);
@@ -150,4 +172,40 @@ body{
     color: var(--hospital-green);
     text-decoration: none;
     font-weight: 400;
+}
+
+.form_container_login{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+
+.logo_home{
+    width: 240px;
+    margin-bottom: 48px;
+    justify-self: center;
+    /* Display set to none so the logo does not show on mobile */
+    display: none;
+}
+
+@media(max-width: 640px){
+    .logo_home{
+        display: block;
+    }
+
+    .secondary_button{
+        width: 300px;
+        position: absolute;
+        /* Sends the secondary button towards bottom */
+        bottom: 0;
+        margin-bottom: 24px;
+    }
+}
+
+.form a{
+    color: var(--hospital-green);
+    font-size: var(--sm);
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 52px;
 }
