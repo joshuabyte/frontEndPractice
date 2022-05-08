@@ -1,326 +1,327 @@
 /* Declaring global color and font size variables */
-:root{
-    --very-light-pink: #C7C7C7;
-    --white: #FFFFFF;
-    --text-input-field: #F7F7F7;
-    --black: #000000;
-    --hospital-green: #ACD9B2;
-    --dark: #232830;
-    --sm: 14px;
-    --md: 16px;
-    --lg: 18px;
+:root {
+  --very-light-pink: #c7c7c7;
+  --white: #ffffff;
+  --text-input-field: #f7f7f7;
+  --black: #000000;
+  --hospital-green: #acd9b2;
+  --dark: #232830;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
 }
 
 /* Adding Quicksand font to body */
-body{
-    margin: 0;
-    font-family: 'Quicksand', sans-serif;
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
 }
 
 /* Styles for "Create new Password" screen */
 
 /* Styling classes orderly */
-.login{
-    width: 100%;
-    height: 100vh;
-    /* Centering all items */
-    display: grid;
-    place-items: center;
+.login {
+  width: 100%;
+  height: 100vh;
+  /* Centering all items */
+  display: grid;
+  place-items: center;
 }
 
 /* Styling the form elements */
-.form_container_email{
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    width: 325px;
-    /* We used this line to center the "Didn't receive the email" text */
-    justify-items: center;
+.form_container_email {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 325px;
+  /* We used this line to center the "Didn't receive the email" text */
+  justify-items: center;
 }
 
-.logo{
-    width: 150px;
-    margin-bottom: 48px;
-    justify-self: center;
-    /* Display set to none so the logo does not show on mobile */
-    display: none;
+.logo {
+  width: 150px;
+  margin-bottom: 48px;
+  justify-self: center;
+  /* Display set to none so the logo does not show on mobile */
+  display: none;
 }
 
-.title{
-    font-size: var(--lg);
-    margin-bottom: 12px;
-    text-align: center;
+.title {
+  font-size: var(--lg);
+  margin-bottom: 12px;
+  text-align: center;
 }
 
 /* Styling the subtitle */
-.subtitle{
-    color: var(--black);
-    font-size: var(--md);
-    font-weight: 300;
-    margin-top: 0;
-    margin-bottom: 32px;
-    text-align: center;
+.subtitle {
+  color: var(--black);
+  font-size: var(--md);
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 32px;
+  text-align: center;
 }
 
 /* Placing the input labels above the input boxes */
-.form{
-    display: flex;
-    flex-direction: column;
+.form {
+  display: flex;
+  flex-direction: column;
 }
 
-.label{
-    font-size: var(--sm);
-    font-weight: bold;
-    margin-bottom: 4px;
+.label {
+  font-size: var(--sm);
+  font-weight: bold;
+  margin-bottom: 4px;
 }
 
-.input{
-    font-family: 'Quicksand', sans-serif;
-    background-color: var(--text-input-field);
-    border: none;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    height: 30px;
-    font-size: var(--md);
-    padding: 6px;
-    margin-bottom: 12px;
+.input {
+  font-family: "Quicksand", sans-serif;
+  background-color: var(--text-input-field);
+  border: none;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  height: 30px;
+  font-size: var(--md);
+  padding: 6px;
+  margin-bottom: 12px;
 }
 
-.input_email{
-    margin-bottom: 22px;
+.input_email {
+  margin-bottom: 22px;
 }
 
-.primary_button{
-    font-family: 'Quicksand', sans-serif;
-    background-color: var(--hospital-green);
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    border: none;
-    color: var(--white);
-    width: 100%;
-    cursor: pointer;
-    font-size: var(--md);
-    font-weight: bold;
-    height: 58px;
+.primary_button {
+  font-family: "Quicksand", sans-serif;
+  background-color: var(--hospital-green);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border: none;
+  color: var(--white);
+  width: 100%;
+  cursor: pointer;
+  font-size: var(--md);
+  font-weight: bold;
+  height: 58px;
 }
 
-.secondary_button{
-    font-family: 'Quicksand', sans-serif;
-    background-color: var(--white);
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    border: 1px solid var(--hospital-green);
-    color: var(--hospital-green);
-    width: 100%;
-    cursor: pointer;
-    font-size: var(--md);
-    font-weight: bold;
-    height: 58px;
+.secondary_button {
+  font-family: "Quicksand", sans-serif;
+  background-color: var(--white);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border: 1px solid var(--hospital-green);
+  color: var(--hospital-green);
+  width: 100%;
+  cursor: pointer;
+  font-size: var(--md);
+  font-weight: bold;
+  height: 58px;
 }
 
-.login_button{
-    margin-top: 14px;
-    margin-bottom: 30px;
+.login_button {
+  margin-top: 14px;
+  margin-bottom: 30px;
 }
 
-@media(max-width: 640px){
-    .logo{
-        display: block;
-    }
+@media (max-width: 640px) {
+  .logo {
+    display: block;
+  }
 }
 
 /* Styles for "resend email" page */
 
-.email_icon{
-    width: 132px;
-    height: 132px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    background: var(--text-input-field);
-    display: flex;
-    /* Line to center the icon with the circle */
-    justify-content: center;
-    align-items: center;
+.email_icon {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: var(--text-input-field);
+  display: flex;
+  /* Line to center the icon with the circle */
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.email_icon img {
+  width: 85px;
+}
+
+.resend {
+  font-size: var(--sm);
+}
+
+.resend span {
+  color: var(--black);
+  font-weight: 400;
+}
+
+.resend a {
+  color: var(--hospital-green);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.form_container_login {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 325px;
+}
+
+.logo_home {
+  width: 240px;
+  margin-bottom: 48px;
+  justify-self: center;
+  /* Display set to none so the logo does not show on mobile */
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .logo_home {
+    display: block;
+  }
+
+  .secondary_button {
+    width: 300px;
+    position: absolute;
+    /* Sends the secondary button towards bottom */
+    bottom: 0;
     margin-bottom: 24px;
+  }
 }
 
-.email_icon img{
-    width: 85px;
-}
-
-.resend{
-    font-size: var(--sm);
-    }
-
-.resend span{
-    color: var(--black);
-    font-weight: 400;
-}
-
-.resend a{
-    color: var(--hospital-green);
-    text-decoration: none;
-    font-weight: 400;
-}
-
-.form_container_login{
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    width: 325px;
-}
-
-.logo_home{
-    width: 240px;
-    margin-bottom: 48px;
-    justify-self: center;
-    /* Display set to none so the logo does not show on mobile */
-    display: none;
-}
-
-@media(max-width: 640px){
-    .logo_home{
-        display: block;
-    }
-
-    .secondary_button{
-        width: 300px;
-        position: absolute;
-        /* Sends the secondary button towards bottom */
-        bottom: 0;
-        margin-bottom: 24px;
-    }
-}
-
-.form a{
-    color: var(--hospital-green);
-    font-size: var(--sm);
-    text-align: center;
-    text-decoration: none;
-    margin-bottom: 52px;
+.form a {
+  color: var(--hospital-green);
+  font-size: var(--sm);
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 52px;
 }
 
 /* Styling the form container for the "create a new account" screen*/
-.form_container_newacc{
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    width: 325px;
+.form_container_newacc {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 325px;
 }
 
-.title_newacc{
-    font-size: var(--lg);
-    margin-bottom: 50px;
-    text-align: start;
+.title_newacc {
+  font-size: var(--lg);
+  margin-bottom: 50px;
+  text-align: start;
 }
 
-.input_name, .input_email, .input_password{
-    margin-bottom: 22px;
+.input_name,
+.input_email,
+.input_password {
+  margin-bottom: 22px;
 }
 
-.create_acc_button{
-    width: 325px;
-    font-family: 'Quicksand', sans-serif;
-    background-color: var(--hospital-green);
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    border: none;
-    color: var(--white);
-    width: 100%;
-    cursor: pointer;
-    font-size: var(--md);
-    font-weight: bold;
-    height: 58px;
+.create_acc_button {
+  width: 325px;
+  font-family: "Quicksand", sans-serif;
+  background-color: var(--hospital-green);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border: none;
+  color: var(--white);
+  width: 100%;
+  cursor: pointer;
+  font-size: var(--md);
+  font-weight: bold;
+  height: 58px;
 }
-@media(max-width: 640px){
-    .create_acc_button{
-        width: 325px;
-        position: fixed;
-        bottom: 0;
-        margin-bottom: 24px;
-    }
-
-.form_container_newacc{
-    position: absolute;
-    top: 0;
-    /* Maybe could be fixed without line below when navbar is created */
-    /* margin-top: 100px; */
-}
-
-.edit_acc_button{
+@media (max-width: 640px) {
+  .create_acc_button {
     width: 325px;
     position: fixed;
     bottom: 0;
     margin-bottom: 24px;
-}
+  }
 
-.form_container_editacc{
-position: absolute;
-top: 0;
-/* Maybe could be fixed without line below when navbar is created */
-/* margin-top: 100px; */
-}
-
-}
-
-.value{
-    color: var(--dark);
-    /* font-weight: 300; */
-    font-size: var(--md);
-    justify-content: space-between;
-    margin-bottom: 40px;
-    margin-top: 10px;
-}
-
-/* Styling the form container for the "Edit account" screen*/
-
-.form_container_editacc{
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    width: 325px;
-}
-
-.edit_acc_button{
-    font-family: 'Quicksand', sans-serif;
-    background-color: var(--white);
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    border: 1px solid var(--hospital-green);
-    color: var(--hospital-green);
-    width: 100%;
-    cursor: pointer;
-    font-size: var(--md);
-    font-weight: bold;
-    height: 58px;
-}
-
-@media(max-width: 640px){
-    .edit_acc_button{
-        width: 325px;
-        position: fixed;
-        bottom: 0;
-        margin-bottom: 24px;
-    }
-
-.form_container_editacc{
+  .form_container_newacc {
     position: absolute;
     top: 0;
     /* Maybe could be fixed without line below when navbar is created */
     /* margin-top: 100px; */
+  }
+
+  .edit_acc_button {
+    width: 325px;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 24px;
+  }
+
+  .form_container_editacc {
+    position: absolute;
+    top: 0;
+    /* Maybe could be fixed without line below when navbar is created */
+    /* margin-top: 100px; */
+  }
 }
+
+.value {
+  color: var(--dark);
+  /* font-weight: 300; */
+  font-size: var(--md);
+  justify-content: space-between;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+/* Styling the form container for the "Edit account" screen*/
+
+.form_container_editacc {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 325px;
+}
+
+.edit_acc_button {
+  font-family: "Quicksand", sans-serif;
+  background-color: var(--white);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border: 1px solid var(--hospital-green);
+  color: var(--hospital-green);
+  width: 100%;
+  cursor: pointer;
+  font-size: var(--md);
+  font-weight: bold;
+  height: 58px;
+}
+
+@media (max-width: 640px) {
+  .edit_acc_button {
+    width: 325px;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 24px;
+  }
+
+  .form_container_editacc {
+    position: absolute;
+    top: 0;
+    /* Maybe could be fixed without line below when navbar is created */
+    /* margin-top: 100px; */
+  }
 }
