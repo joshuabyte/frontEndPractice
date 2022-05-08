@@ -1,4 +1,4 @@
-/* Declaring global color variables */
+/* Declaring global color and font size variables */
 :root{
     --very-light-pink: #C7C7C7;
     --white: #FFFFFF;
@@ -208,4 +208,119 @@ body{
     text-align: center;
     text-decoration: none;
     margin-bottom: 52px;
+}
+
+/* Styling the form container for the "create a new account" screen*/
+.form_container_newacc{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 325px;
+}
+
+.title_newacc{
+    font-size: var(--lg);
+    margin-bottom: 50px;
+    text-align: start;
+}
+
+.input_name, .input_email, .input_password{
+    margin-bottom: 22px;
+}
+
+.create_acc_button{
+    width: 325px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--hospital-green);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 58px;
+}
+@media(max-width: 640px){
+    .create_acc_button{
+        width: 325px;
+        position: fixed;
+        bottom: 0;
+        margin-bottom: 24px;
+    }
+
+.form_container_newacc{
+    position: absolute;
+    top: 0;
+    /* Maybe could be fixed without line below when navbar is created */
+    /* margin-top: 100px; */
+}
+
+.edit_acc_button{
+    width: 325px;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 24px;
+}
+
+.form_container_editacc{
+position: absolute;
+top: 0;
+/* Maybe could be fixed without line below when navbar is created */
+/* margin-top: 100px; */
+}
+
+}
+
+.value{
+    color: var(--dark);
+    /* font-weight: 300; */
+    font-size: var(--md);
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+/* Styling the form container for the "Edit account" screen*/
+
+.form_container_editacc{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 325px;
+}
+
+.edit_acc_button{
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--white);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 58px;
+}
+
+@media(max-width: 640px){
+    .edit_acc_button{
+        width: 325px;
+        position: fixed;
+        bottom: 0;
+        margin-bottom: 24px;
+    }
+
+.form_container_editacc{
+    position: absolute;
+    top: 0;
+    /* Maybe could be fixed without line below when navbar is created */
+    /* margin-top: 100px; */
+}
 }
